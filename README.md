@@ -1,6 +1,7 @@
 <!-- ╔══════════════════════════════════════════════════════════════╗
      Profile README for github.com/AbdullahAIOps
-     Repo MUST be named exactly "AbdullahAIOps" for this to show on your profile.
+     Repo MUST be named exactly "AbdullahAIOps" to show on your profile.
+     All visuals are self-hosted SVGs in /assets — they never rate-limit.
      ╚══════════════════════════════════════════════════════════════╝ -->
 
 <div align="center">
@@ -9,12 +10,11 @@
 
 <br/><br/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=22&pause=900&color=C9A84C&center=true&vCenter=true&width=620&height=40&lines=Building+reliable+cloud+infrastructure;Automating+CI%2FCD+pipelines;Shipping+with+Docker+%26+Kubernetes;Engineering+resilient%2C+observable+systems" alt="What I do" />
-</a>
+<img src="./assets/tagline.svg" width="620" alt="What I do" />
 
-<br/>
+<br/><br/>
 
+<a href="https://abdullahaiops.github.io"><img src="https://img.shields.io/badge/Portfolio-13213B?style=for-the-badge&logo=githubpages&logoColor=C9A84C" alt="Portfolio"/></a>
 <a href="https://linkedin.com/in/abdullha-saleem"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 <a href="mailto:abdullhasaleem123@gmail.com"><img src="https://img.shields.io/badge/Email-C9A84C?style=for-the-badge&logo=gmail&logoColor=11192a" alt="Email"/></a>
 <a href="https://wa.me/923130467458"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
@@ -22,7 +22,7 @@
 
 </div>
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## About
 
@@ -34,7 +34,7 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 - 🤖 Exploring where DevOps meets AI through AIOps and intelligent automation
 - 🌍 Open to DevOps, Cloud, and SRE roles — remote and on-site
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## Tech Stack
 
@@ -70,7 +70,19 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## How I Ship
+
+<div align="center">
+
+<img src="./assets/pipeline.svg" width="100%" alt="CI/CD pipeline: code, build, test, scan, deploy, monitor" />
+
+<sub>From commit to production — automated, scanned, and observable at every stage.</sub>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## GitHub Stats
 
@@ -79,17 +91,9 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 <img height="170" src="https://github-readme-stats.vercel.app/api?username=AbdullahAIOps&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&title_color=C9A84C&icon_color=C9A84C&text_color=A8C4E0&bg_color=0B1424" alt="GitHub stats"/>
 <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahAIOps&layout=compact&hide_border=true&langs_count=8&title_color=C9A84C&text_color=A8C4E0&bg_color=0B1424" alt="Top languages"/>
 
-<br/>
-
-<img width="98%" src="https://streak-stats.demolab.com?user=AbdullahAIOps&hide_border=true&background=0B1424&stroke=1B2A4A&ring=C9A84C&fire=C9A84C&currStreakNum=EAF2FB&sideNums=EAF2FB&currStreakLabel=A8C4E0&sideLabels=A8C4E0&dates=6E84A0" alt="Streak"/>
-
-<br/>
-
-<img width="98%" src="https://github-profile-trophy.vercel.app/?username=AbdullahAIOps&theme=onedark&no-frame=true&no-bg=true&margin-w=6&column=7" alt="Trophies"/>
-
 </div>
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="" />
 
 ## Featured Projects
 
@@ -104,19 +108,8 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 
 <br/>
 
-## Connect
-
 <div align="center">
 
-**Let's build something reliable together.**
+<img src="./assets/footer.svg" width="100%" alt="Let's build something reliable together" />
 
-📍 Pakistan &nbsp;·&nbsp; 📫 abdullhasaleem123@gmail.com &nbsp;·&nbsp; 💼 [LinkedIn](https://linkedin.com/in/abdullha-saleem)
-
-<sub>DevOps Engineer & AIOps Specialist · Cloud · Kubernetes · Terraform · CI/CD</sub>
-
-</div>
-
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/AbdullahAIOps/AbdullahAIOps/output/snake.svg" alt="snake"/>
 </div>
