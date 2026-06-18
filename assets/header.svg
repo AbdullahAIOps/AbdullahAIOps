@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Abdullah Saleem — DevOps and AIOps Engineer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0B1424"/>
+      <stop offset="0.55" stop-color="#111e35"/>
+      <stop offset="1" stop-color="#16273f"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#A8C4E0" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#A8C4E0" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#A8C4E0" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
+    </radialGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="340" fill="url(#bg)"/>
+
+  <!-- Faint blueprint grid -->
+  <g stroke="#A8C4E0" stroke-opacity="0.05" stroke-width="1">
+    <path d="M0 56 H1200 M0 112 H1200 M0 168 H1200 M0 224 H1200 M0 280 H1200"/>
+    <path d="M60 0 V340 M180 0 V340 M300 0 V340 M420 0 V340 M540 0 V340 M660 0 V340 M780 0 V340 M900 0 V340 M1020 0 V340 M1140 0 V340"/>
+  </g>
+
+  <!-- Scattered network nodes (right half) -->
+  <g fill="#A8C4E0">
+    <line x1="820" y1="120" x2="940" y2="96"  stroke="#3D6494" stroke-opacity="0.35" stroke-width="1"/>
+    <line x1="1050" y1="150" x2="940" y2="96" stroke="#3D6494" stroke-opacity="0.35" stroke-width="1"/>
+    <line x1="900" y1="60" x2="940" y2="96"   stroke="#3D6494" stroke-opacity="0.30" stroke-width="1"/>
+    <line x1="1010" y1="80" x2="1050" y2="150" stroke="#3D6494" stroke-opacity="0.25" stroke-width="1"/>
+    <circle cx="820" cy="120" r="3">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="150" r="3.4">
+      <animate attributeName="opacity" values="1;0.35;1" dur="3.1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="60" r="2.6">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1010" cy="80" r="2.6">
+      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Isometric infrastructure stack (right) -->
+  <!-- bottom slab (my=250) -->
+  <g>
+    <polygon points="820,250 940,310 940,328 820,268" fill="#0c1729"/>
+    <polygon points="940,310 1060,250 1060,268 940,328" fill="#0a1322"/>
+    <polygon points="940,190 1060,250 940,310 820,250" fill="#1B2A4A" fill-opacity="0.92" stroke="#A8C4E0" stroke-opacity="0.22" stroke-width="1"/>
+  </g>
+  <!-- middle slab (my=216) -->
+  <g>
+    <polygon points="820,216 940,276 940,294 820,234" fill="#0d1b30"/>
+    <polygon points="940,276 1060,216 1060,234 940,294" fill="#0b1626"/>
+    <polygon points="940,156 1060,216 940,276 820,216" fill="#22406a" fill-opacity="0.92" stroke="#A8C4E0" stroke-opacity="0.26" stroke-width="1"/>
+  </g>
+  <!-- top slab (my=182) with gold edge -->
+  <g>
+    <polygon points="820,182 940,242 940,260 820,200" fill="#0f2138"/>
+    <polygon points="940,242 1060,182 1060,200 940,260" fill="#0c1a2d"/>
+    <polygon points="940,122 1060,182 940,242 820,182" fill="#2b4f7a" fill-opacity="0.95" stroke="#C9A84C" stroke-opacity="0.85" stroke-width="1.4"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Connecting beam + hovering core node -->
+  <line x1="940" y1="104" x2="940" y2="150" stroke="#C9A84C" stroke-opacity="0.5" stroke-width="1.5">
+    <animate attributeName="stroke-opacity" values="0.2;0.7;0.2" dur="2.4s" repeatCount="indefinite"/>
+  </line>
+  <g>
+    <circle cx="940" cy="94" r="11" fill="#C9A84C" filter="url(#glow)">
+      <animate attributeName="r" values="9;12;9" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="4s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- Data packet flowing into the stack -->
+  <circle r="4" fill="#A8C4E0" filter="url(#glow)">
+    <animateMotion path="M770 150 Q860 120 940 160" dur="3.4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- ── LEFT TEXT BLOCK ── -->
+  <text x="70" y="64" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" letter-spacing="3" fill="#C9A84C">$ whoami</text>
+
+  <text x="68" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#EAF2FB">Abdullah Saleem</text>
+
+  <rect x="72" y="178" height="4" rx="2" fill="#C9A84C">
+    <animate attributeName="width" values="0;360" dur="1.1s" begin="0.2s" fill="freeze"/>
+  </rect>
+
+  <text x="72" y="218" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="22" fill="#C9A84C">DevOps &amp; AIOps Engineer</text>
+  <text x="72" y="250" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14.5" fill="#A8C4E0" fill-opacity="0.82">Cloud  ·  Kubernetes  ·  Terraform  ·  CI/CD  ·  Observability</text>
+
+  <!-- Availability tag -->
+  <g transform="translate(72,278)">
+    <rect x="0" y="0" width="218" height="26" rx="13" fill="#A8C4E0" fill-opacity="0.06" stroke="#A8C4E0" stroke-opacity="0.18"/>
+    <circle cx="16" cy="13" r="4.5" fill="#5fd0a8" filter="url(#glow)">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="30" y="17.5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" letter-spacing="1.5" fill="#A8C4E0">AVAILABLE FOR ROLES</text>
+  </g>
+
+  <!-- Moving sheen -->
+  <rect x="-320" y="0" width="320" height="340" fill="url(#sheen)" opacity="0.05">
+    <animateTransform attributeName="transform" type="translate" from="-320 0" to="1520 0" dur="7.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Vignette + frame -->
+  <rect width="1200" height="340" fill="url(#vig)"/>
+  <rect x="2" y="2" width="1196" height="336" rx="14" fill="none" stroke="#C9A84C" stroke-opacity="0.18" stroke-width="2"/>
+</svg>
