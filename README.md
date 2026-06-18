@@ -116,9 +116,7 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 
 </div>
 
-<!-- Optional: enable the contribution-snake animation by adding
-     .github/workflows/snake.yml (included in this package) and uncommenting:
+
 <div align="center">
   <img src="https://raw.githubusercontent.com/AbdullahAIOps/AbdullahAIOps/output/snake.svg" alt="snake"/>
 </div>
--->
