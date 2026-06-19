@@ -20,6 +20,13 @@
 <a href="https://wa.me/923130467458"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" alt="WhatsApp"/></a>
 <img src="https://komarev.com/ghpvc/?username=AbdullahAIOps&color=C9A84C&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile views"/>
 
+<br/><br/>
+
+<img src="https://img.shields.io/badge/OPEN%20TO%20RELOCATION-EU%20%C2%B7%20GCC-C9A84C?style=for-the-badge&labelColor=0B1424" alt="Open to relocation: EU and GCC"/>
+<img src="https://img.shields.io/badge/VISA%20SPONSORSHIP-WELCOME-5FD0A8?style=for-the-badge&labelColor=0B1424" alt="Visa sponsorship welcome"/>
+
+<sub>📍 Based in Pakistan &nbsp;·&nbsp; ready to relocate to the EU (🇩🇪 Blue Card eligible) or the GCC &nbsp;·&nbsp; open to remote & on-site</sub>
+
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
@@ -35,7 +42,7 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 - 🔐 &nbsp;Shift-left **DevSecOps** — supply-chain scanning, signing, policy-as-code, hardening
 - 🤖 &nbsp;Applying **AIOps** — anomaly detection, forecasting, and self-healing automation
 - 📈 &nbsp;Obsessed with **SLOs**, error budgets, and full-stack observability
-- 🌍 &nbsp;Open to **DevOps · Cloud · SRE** roles — remote and on-site
+- 🌍 &nbsp;Open to **DevOps · Cloud · SRE** roles in the **EU & GCC** — relocation and **visa sponsorship welcome**
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
