@@ -1,124 +1,231 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Abdullah Saleem — DevOps and AIOps Engineer">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Abdullah Saleem — DevOps and AIOps Engineer">
   <defs>
+    <!-- backdrop -->
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0B1424"/>
-      <stop offset="0.55" stop-color="#111e35"/>
-      <stop offset="1" stop-color="#16273f"/>
+      <stop offset="0" stop-color="#080F1C"/>
+      <stop offset="0.5" stop-color="#0C1A30"/>
+      <stop offset="1" stop-color="#102640"/>
     </linearGradient>
-    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A8C4E0" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#A8C4E0" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#A8C4E0" stop-opacity="0"/>
-    </linearGradient>
-    <radialGradient id="vig" cx="0.5" cy="0.4" r="0.75">
-      <stop offset="0.55" stop-color="#000000" stop-opacity="0"/>
-      <stop offset="1" stop-color="#000000" stop-opacity="0.35"/>
+    <radialGradient id="halo" cx="0.74" cy="0.46" r="0.5">
+      <stop offset="0" stop-color="#2A4A78" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2A4A78" stop-opacity="0"/>
     </radialGradient>
-    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
-      <feGaussianBlur stdDeviation="3.4" result="b"/>
+    <!-- isometric slab faces -->
+    <linearGradient id="slabTop" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#34608F"/>
+      <stop offset="1" stop-color="#1E3C60"/>
+    </linearGradient>
+    <linearGradient id="slabTop2" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#2B5180"/>
+      <stop offset="1" stop-color="#1A3253"/>
+    </linearGradient>
+    <linearGradient id="slabL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12243C"/>
+      <stop offset="1" stop-color="#0A1626"/>
+    </linearGradient>
+    <linearGradient id="slabR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1B3354"/>
+      <stop offset="1" stop-color="#0F2138"/>
+    </linearGradient>
+    <!-- container cube -->
+    <linearGradient id="cubeT" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#E7CE7E"/>
+      <stop offset="1" stop-color="#C9A84C"/>
+    </linearGradient>
+    <linearGradient id="cubeL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8A7234"/>
+      <stop offset="1" stop-color="#5E4D22"/>
+    </linearGradient>
+    <linearGradient id="cubeR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#A8893C"/>
+      <stop offset="1" stop-color="#7A6128"/>
+    </linearGradient>
+    <linearGradient id="cubeBT" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#7FB4D8"/>
+      <stop offset="1" stop-color="#3D6494"/>
+    </linearGradient>
+    <linearGradient id="cubeBL" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E3A5C"/>
+      <stop offset="1" stop-color="#142A45"/>
+    </linearGradient>
+    <linearGradient id="cubeBR" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2C5380"/>
+      <stop offset="1" stop-color="#1B3858"/>
+    </linearGradient>
+    <radialGradient id="core" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#FBEFC4"/>
+      <stop offset="0.45" stop-color="#E7CE7E"/>
+      <stop offset="1" stop-color="#C9A84C"/>
+    </radialGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#BFE0FF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#BFE0FF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#BFE0FF" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="vig" cx="0.5" cy="0.42" r="0.78">
+      <stop offset="0.5" stop-color="#000" stop-opacity="0"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.4"/>
+    </radialGradient>
+    <filter id="glow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3.2" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <filter id="softglow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="6" result="b"/>
+    <filter id="bigGlow" x="-120%" y="-120%" width="340%" height="340%">
+      <feGaussianBlur stdDeviation="9" result="b"/>
       <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="drop" x="-60%" y="-60%" width="220%" height="260%">
+      <feDropShadow dx="0" dy="10" stdDeviation="9" flood-color="#000" flood-opacity="0.5"/>
     </filter>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="340" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#bg)"/>
+  <rect width="1200" height="360" fill="url(#halo)"/>
 
-  <!-- Faint blueprint grid -->
-  <g stroke="#A8C4E0" stroke-opacity="0.05" stroke-width="1">
-    <path d="M0 56 H1200 M0 112 H1200 M0 168 H1200 M0 224 H1200 M0 280 H1200"/>
-    <path d="M60 0 V340 M180 0 V340 M300 0 V340 M420 0 V340 M540 0 V340 M660 0 V340 M780 0 V340 M900 0 V340 M1020 0 V340 M1140 0 V340"/>
+  <!-- blueprint grid -->
+  <g stroke="#A8C4E0" stroke-opacity="0.045" stroke-width="1">
+    <path d="M0 60 H1200 M0 120 H1200 M0 180 H1200 M0 240 H1200 M0 300 H1200"/>
+    <path d="M120 0 V360 M240 0 V360 M360 0 V360 M480 0 V360 M600 0 V360 M720 0 V360 M840 0 V360 M960 0 V360 M1080 0 V360"/>
   </g>
 
-  <!-- Scattered network nodes (right half) -->
+  <!-- subtle starfield right -->
   <g fill="#A8C4E0">
-    <line x1="820" y1="120" x2="940" y2="96"  stroke="#3D6494" stroke-opacity="0.35" stroke-width="1"/>
-    <line x1="1050" y1="150" x2="940" y2="96" stroke="#3D6494" stroke-opacity="0.35" stroke-width="1"/>
-    <line x1="900" y1="60" x2="940" y2="96"   stroke="#3D6494" stroke-opacity="0.30" stroke-width="1"/>
-    <line x1="1010" y1="80" x2="1050" y2="150" stroke="#3D6494" stroke-opacity="0.25" stroke-width="1"/>
-    <circle cx="820" cy="120" r="3">
-      <animate attributeName="opacity" values="0.3;1;0.3" dur="2.6s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1050" cy="150" r="3.4">
-      <animate attributeName="opacity" values="1;0.35;1" dur="3.1s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="900" cy="60" r="2.6">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2.2s" repeatCount="indefinite"/>
-    </circle>
-    <circle cx="1010" cy="80" r="2.6">
-      <animate attributeName="opacity" values="0.9;0.3;0.9" dur="2.8s" repeatCount="indefinite"/>
-    </circle>
+    <circle cx="1040" cy="70" r="1.4" opacity="0.5"><animate attributeName="opacity" values="0.2;0.8;0.2" dur="3.4s" repeatCount="indefinite"/></circle>
+    <circle cx="1120" cy="120" r="1.1" opacity="0.4"><animate attributeName="opacity" values="0.6;0.15;0.6" dur="4s" repeatCount="indefinite"/></circle>
+    <circle cx="980" cy="40" r="1.2" opacity="0.45"><animate attributeName="opacity" values="0.2;0.7;0.2" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1150" cy="220" r="1.3" opacity="0.4"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="3.6s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Isometric infrastructure stack (right) -->
-  <!-- bottom slab (my=250) -->
-  <g>
-    <polygon points="820,250 940,310 940,328 820,268" fill="#0c1729"/>
-    <polygon points="940,310 1060,250 1060,268 940,328" fill="#0a1322"/>
-    <polygon points="940,190 1060,250 940,310 820,250" fill="#1B2A4A" fill-opacity="0.92" stroke="#A8C4E0" stroke-opacity="0.22" stroke-width="1"/>
-  </g>
-  <!-- middle slab (my=216) -->
-  <g>
-    <polygon points="820,216 940,276 940,294 820,234" fill="#0d1b30"/>
-    <polygon points="940,276 1060,216 1060,234 940,294" fill="#0b1626"/>
-    <polygon points="940,156 1060,216 940,276 820,216" fill="#22406a" fill-opacity="0.92" stroke="#A8C4E0" stroke-opacity="0.26" stroke-width="1"/>
-  </g>
-  <!-- top slab (my=182) with gold edge -->
-  <g>
-    <polygon points="820,182 940,242 940,260 820,200" fill="#0f2138"/>
-    <polygon points="940,242 1060,182 1060,200 940,260" fill="#0c1a2d"/>
-    <polygon points="940,122 1060,182 940,242 820,182" fill="#2b4f7a" fill-opacity="0.95" stroke="#C9A84C" stroke-opacity="0.85" stroke-width="1.4"/>
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="5s" repeatCount="indefinite"/>
+  <!-- ===================== ISOMETRIC PLATFORM (right) ===================== -->
+  <!-- All built around platform center cx=900, lifted to fit frame -->
+  <g transform="translate(0,-20)">
+  <g filter="url(#drop)">
+    <!-- ground slab : center (900, 286), half-width 150, height 16 -->
+    <polygon points="750,286 900,361 900,377 750,302" fill="url(#slabL)"/>
+    <polygon points="900,361 1050,286 1050,302 900,377" fill="url(#slabR)"/>
+    <polygon points="900,211 1050,286 900,361 750,286" fill="url(#slabTop2)" stroke="#A8C4E0" stroke-opacity="0.18" stroke-width="1"/>
   </g>
 
-  <!-- Connecting beam + hovering core node -->
-  <line x1="940" y1="104" x2="940" y2="150" stroke="#C9A84C" stroke-opacity="0.5" stroke-width="1.5">
-    <animate attributeName="stroke-opacity" values="0.2;0.7;0.2" dur="2.4s" repeatCount="indefinite"/>
+  <!-- mid slab : center (900, 250), half-width 112, height 16 -->
+  <g>
+    <polygon points="788,250 900,306 900,322 788,266" fill="url(#slabL)"/>
+    <polygon points="900,306 1012,250 1012,266 900,322" fill="url(#slabR)"/>
+    <polygon points="900,194 1012,250 900,306 788,250" fill="url(#slabTop)" stroke="#A8C4E0" stroke-opacity="0.22" stroke-width="1"/>
+    <!-- top-slab seam lines (rack hint) -->
+    <g stroke="#A8C4E0" stroke-opacity="0.16" stroke-width="1">
+      <line x1="844" y1="222" x2="956" y2="222"/>
+      <line x1="872" y1="208" x2="872" y2="292"/>
+      <line x1="928" y1="208" x2="928" y2="292"/>
+    </g>
+  </g>
+
+  <!-- container cluster on top of mid-slab -->
+  <!-- helper cube macro inlined; footprint half-width 22, height 26 -->
+  <!-- pod A (gold) center top (864, 196) -->
+  <g>
+    <polygon points="842,196 864,207 864,233 842,222" fill="url(#cubeL)"/>
+    <polygon points="864,207 886,196 886,222 864,233" fill="url(#cubeR)"/>
+    <polygon points="864,185 886,196 864,207 842,196" fill="url(#cubeT)" stroke="#FBEFC4" stroke-opacity="0.5" stroke-width="0.8"/>
+  </g>
+  <!-- pod B (blue) center top (912, 196) -->
+  <g>
+    <polygon points="890,196 912,207 912,233 890,222" fill="url(#cubeBL)"/>
+    <polygon points="912,207 934,196 934,222 912,233" fill="url(#cubeBR)"/>
+    <polygon points="912,185 934,196 912,207 890,196" fill="url(#cubeBT)" stroke="#BFE0FF" stroke-opacity="0.4" stroke-width="0.8"/>
+  </g>
+  <!-- pod C (blue, back) center top (888, 178) -->
+  <g>
+    <polygon points="866,178 888,189 888,212 866,201" fill="url(#cubeBL)"/>
+    <polygon points="888,189 910,178 910,201 888,212" fill="url(#cubeBR)"/>
+    <polygon points="888,167 910,178 888,189 866,178" fill="url(#cubeBT)" stroke="#BFE0FF" stroke-opacity="0.4" stroke-width="0.8"/>
+  </g>
+  </g>
+
+  <!-- vertical light beam to core -->
+  <line x1="888" y1="150" x2="888" y2="120" stroke="#E7CE7E" stroke-opacity="0.55" stroke-width="1.6">
+    <animate attributeName="stroke-opacity" values="0.2;0.75;0.2" dur="2.4s" repeatCount="indefinite"/>
   </line>
+
+  <!-- ORBIT RINGS around core -->
+  <g transform="translate(888,108)" fill="none" stroke-width="1.4">
+    <ellipse rx="84" ry="30" stroke="#5BC8E0" stroke-opacity="0.35">
+      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="18s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="64" ry="23" stroke="#5FD0A8" stroke-opacity="0.4" transform="rotate(34)">
+      <animateTransform attributeName="transform" type="rotate" from="34" to="394" dur="14s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  <!-- orbiting satellite nodes -->
   <g>
-    <circle cx="940" cy="94" r="11" fill="#C9A84C" filter="url(#glow)">
-      <animate attributeName="r" values="9;12;9" dur="2.4s" repeatCount="indefinite"/>
-      <animate attributeName="fill-opacity" values="0.85;1;0.85" dur="2.4s" repeatCount="indefinite"/>
+    <circle r="3.4" fill="#5BC8E0" filter="url(#glow)">
+      <animateMotion dur="18s" repeatCount="indefinite" path="M84,0 A84,30 0 1,1 -84,0 A84,30 0 1,1 84,0"/>
+      <animateTransform attributeName="transform" type="translate" values="888 108; 888 108" dur="18s" repeatCount="indefinite"/>
     </circle>
-    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -7; 0 0" dur="4s" repeatCount="indefinite"/>
   </g>
 
-  <!-- Data packet flowing into the stack -->
-  <circle r="4" fill="#A8C4E0" filter="url(#glow)">
-    <animateMotion path="M770 150 Q860 120 940 160" dur="3.4s" repeatCount="indefinite"/>
-    <animate attributeName="opacity" values="0;1;1;0" dur="3.4s" repeatCount="indefinite"/>
+  <!-- glowing GOLD CORE -->
+  <g>
+    <circle cx="888" cy="108" r="15" fill="url(#core)" filter="url(#bigGlow)">
+      <animate attributeName="r" values="13;16.5;13" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="888" cy="108" r="7" fill="#FFF8E6" opacity="0.9"/>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="4.5s" repeatCount="indefinite"/>
+  </g>
+
+  <!-- floating SECURITY shield satellite (left of core) -->
+  <g transform="translate(792,150)" filter="url(#drop)">
+    <animateTransform attributeName="transform" type="translate" values="792 150; 792 142; 792 150" dur="5s" repeatCount="indefinite"/>
+    <path d="M0,-16 L15,-9 V4 C15,15 8,21 0,25 C-8,21 -15,15 -15,4 V-9 Z"
+          fill="#0F2236" stroke="#5FD0A8" stroke-width="1.6"/>
+    <path d="M-6,2 L-1.5,7 L7,-5" fill="none" stroke="#5FD0A8" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- floating AI chip satellite (right of core) -->
+  <g transform="translate(1004,150)" filter="url(#drop)">
+    <animateTransform attributeName="transform" type="translate" values="1004 150; 1004 158; 1004 150" dur="5.6s" repeatCount="indefinite"/>
+    <rect x="-15" y="-15" width="30" height="30" rx="6" fill="#0F2236" stroke="#5BC8E0" stroke-width="1.6"/>
+    <g stroke="#5BC8E0" stroke-width="1.6">
+      <line x1="-15" y1="-7" x2="-21" y2="-7"/><line x1="-15" y1="7" x2="-21" y2="7"/>
+      <line x1="15" y1="-7" x2="21" y2="-7"/><line x1="15" y1="7" x2="21" y2="7"/>
+      <line x1="-7" y1="-15" x2="-7" y2="-21"/><line x1="7" y1="-15" x2="7" y2="-21"/>
+      <line x1="-7" y1="15" x2="-7" y2="21"/><line x1="7" y1="15" x2="7" y2="21"/>
+    </g>
+    <g fill="#5BC8E0"><circle cx="-6" cy="-6" r="2.4"/><circle cx="6" cy="-4" r="2.4"/><circle cx="0" cy="6" r="2.4"/></g>
+    <g stroke="#5BC8E0" stroke-width="1.1" stroke-opacity="0.8"><line x1="-6" y1="-6" x2="6" y2="-4"/><line x1="6" y1="-4" x2="0" y2="6"/><line x1="0" y1="6" x2="-6" y2="-6"/></g>
+  </g>
+
+  <!-- data packet flowing into platform -->
+  <circle r="3.6" fill="#BFE0FF" filter="url(#glow)">
+    <animateMotion path="M720 168 Q800 138 888 176" dur="3.2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="3.2s" repeatCount="indefinite"/>
   </circle>
 
-  <!-- ── LEFT TEXT BLOCK ── -->
-  <text x="70" y="64" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" letter-spacing="3" fill="#C9A84C">$ whoami</text>
+  <!-- ===================== LEFT TEXT ===================== -->
+  <text x="72" y="74" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" letter-spacing="4" fill="#C9A84C">$ whoami</text>
 
-  <text x="68" y="158" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="600" fill="#EAF2FB">Abdullah Saleem</text>
+  <text x="70" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="62" font-weight="700" fill="#EAF2FB">Abdullah Saleem</text>
 
-  <rect x="72" y="178" height="4" rx="2" fill="#C9A84C">
-    <animate attributeName="width" values="0;360" dur="1.1s" begin="0.2s" fill="freeze"/>
+  <rect x="74" y="188" height="4" rx="2" fill="#C9A84C">
+    <animate attributeName="width" values="0;372" dur="1.2s" begin="0.2s" fill="freeze"/>
   </rect>
 
-  <text x="72" y="218" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="22" fill="#C9A84C">DevOps &amp; AIOps Engineer</text>
-  <text x="72" y="250" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14.5" fill="#A8C4E0" fill-opacity="0.82">Cloud  ·  Kubernetes  ·  Terraform  ·  CI/CD  ·  Observability</text>
+  <text x="74" y="228" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="22" fill="#E7CE7E">DevOps &amp; AIOps Engineer</text>
+  <text x="74" y="259" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="14" fill="#A8C4E0" fill-opacity="0.85">Cloud · Kubernetes · Terraform · CI/CD · DevSecOps · Observability</text>
 
-  <!-- Availability tag -->
-  <g transform="translate(72,278)">
-    <rect x="0" y="0" width="218" height="26" rx="13" fill="#A8C4E0" fill-opacity="0.06" stroke="#A8C4E0" stroke-opacity="0.18"/>
-    <circle cx="16" cy="13" r="4.5" fill="#5fd0a8" filter="url(#glow)">
+  <!-- availability chip -->
+  <g transform="translate(74,286)">
+    <rect x="0" y="0" width="224" height="28" rx="14" fill="#A8C4E0" fill-opacity="0.06" stroke="#A8C4E0" stroke-opacity="0.2"/>
+    <circle cx="17" cy="14" r="4.5" fill="#5FD0A8" filter="url(#glow)">
       <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
-    <text x="30" y="17.5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" letter-spacing="1.5" fill="#A8C4E0">AVAILABLE FOR ROLES</text>
+    <text x="32" y="18.5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="12" letter-spacing="1.6" fill="#A8C4E0">AVAILABLE FOR ROLES</text>
   </g>
 
-  <!-- Moving sheen -->
-  <rect x="-320" y="0" width="320" height="340" fill="url(#sheen)" opacity="0.05">
-    <animateTransform attributeName="transform" type="translate" from="-320 0" to="1520 0" dur="7.5s" repeatCount="indefinite"/>
+  <!-- moving sheen -->
+  <rect x="-340" y="0" width="340" height="360" fill="url(#sheen)" opacity="0.04">
+    <animateTransform attributeName="transform" type="translate" from="-340 0" to="1540 0" dur="8s" repeatCount="indefinite"/>
   </rect>
 
-  <!-- Vignette + frame -->
-  <rect width="1200" height="340" fill="url(#vig)"/>
-  <rect x="2" y="2" width="1196" height="336" rx="14" fill="none" stroke="#C9A84C" stroke-opacity="0.18" stroke-width="2"/>
+  <rect width="1200" height="360" fill="url(#vig)"/>
+  <rect x="2" y="2" width="1196" height="356" rx="16" fill="none" stroke="#C9A84C" stroke-opacity="0.2" stroke-width="2"/>
 </svg>

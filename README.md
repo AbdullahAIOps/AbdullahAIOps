@@ -10,7 +10,7 @@
 
 <br/><br/>
 
-<img src="./assets/tagline.svg" width="620" alt="What I do" />
+<img src="./assets/tagline.svg" width="620" alt="Building reliable cloud infrastructure · automating CI/CD · shipping with Docker and Kubernetes" />
 
 <br/><br/>
 
@@ -26,13 +26,28 @@
 
 ## About
 
-DevOps & AIOps Engineer focused on building scalable cloud infrastructure, automating delivery pipelines, and keeping systems reliable, observable, and secure. I work across **AWS** and **Azure**, containerize with **Docker** and **Kubernetes**, and treat infrastructure as code with **Terraform**.
+> **Cloud platforms that are reliable by design, secure by default, and observable end-to-end.**
 
-- 🔧 Building CI/CD pipelines, container platforms, and infrastructure-as-code
-- ☁️ Working hands-on across AWS and Azure environments
-- 🔐 Bringing a DevSecOps mindset — shift-left security, hardening, and remediation
-- 🤖 Exploring where DevOps meets AI through AIOps and intelligent automation
-- 🌍 Open to DevOps, Cloud, and SRE roles — remote and on-site
+DevOps & AIOps Engineer focused on building scalable cloud infrastructure, automating delivery pipelines, and keeping systems reliable, observable, and secure. I work across **AWS** and **Azure**, containerize with **Docker** and **Kubernetes**, and treat infrastructure as code with **Terraform** — wiring in security and intelligent operations from day one, not as an afterthought.
+
+- 🔧 &nbsp;Designing CI/CD pipelines, container platforms, and infrastructure-as-code
+- ☁️ &nbsp;Hands-on across **AWS** and **Azure** — landing zones, networking, IAM, cost
+- 🔐 &nbsp;Shift-left **DevSecOps** — supply-chain scanning, signing, policy-as-code, hardening
+- 🤖 &nbsp;Applying **AIOps** — anomaly detection, forecasting, and self-healing automation
+- 📈 &nbsp;Obsessed with **SLOs**, error budgets, and full-stack observability
+- 🌍 &nbsp;Open to **DevOps · Cloud · SRE** roles — remote and on-site
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## Production Architecture
+
+<div align="center">
+
+<img src="./assets/architecture.svg" width="100%" alt="Production architecture: multi-node Kubernetes cluster provisioned with Terraform, delivered via GitOps, observed end-to-end" />
+
+<sub>A reference of how I assemble platforms — a multi-node Kubernetes cluster, provisioned with Terraform, delivered through GitOps, secured at the edge, and observed end-to-end.</sub>
+
+</div>
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
@@ -84,6 +99,30 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 
 <img src="./assets/divider.svg" width="100%" alt="" />
 
+## Secure Software Supply Chain
+
+<div align="center">
+
+<img src="./assets/devsecops.svg" width="100%" alt="DevSecOps supply chain: SAST, SCA with Trivy, secret scanning, SBOM with Syft, Cosign signing, Kyverno admission" />
+
+<sub>Security shifted left — every artifact is scanned, attested, signed, and admitted only when it passes policy.</sub>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
+## AIOps — Intelligent Operations
+
+<div align="center">
+
+<img src="./assets/aiops.svg" width="100%" alt="AIOps: metrics, logs and traces feeding an ML engine for anomaly detection, forecasting, and auto-remediation" />
+
+<sub>Telemetry in, insight out — anomaly detection and forecasting that trigger root-cause analysis and self-healing.</sub>
+
+</div>
+
+<img src="./assets/divider.svg" width="100%" alt="" />
+
 ## GitHub Stats
 
 <div align="center">
@@ -97,14 +136,15 @@ DevOps & AIOps Engineer focused on building scalable cloud infrastructure, autom
 
 ## Featured Projects
 
-> Hands-on, production-style projects — full code, READMEs, and architecture notes.
+> Production-grade flagship work — every repo ships full Terraform / Helm / pipeline code, a clear README, an architecture diagram, and ADRs.
 
-| Project | What it shows | Stack |
+| Project | Highlights | Stack |
 |---|---|---|
-| **[k8s-gitops-platform](https://github.com/AbdullahAIOps)** | Kubernetes platform provisioned with Terraform, deployed via GitOps | `EKS` · `Helm` · `ArgoCD` · `Terraform` |
-| **[ci-cd-pipeline-demo](https://github.com/AbdullahAIOps)** | End-to-end pipeline: build → scan → containerize → deploy | `GitHub Actions` · `Docker` · `Trivy` |
-| **[terraform-aws-infrastructure](https://github.com/AbdullahAIOps)** | Reusable, multi-environment AWS infrastructure modules | `Terraform` · `VPC` · `RDS` · `IAM` |
-| **[observability-stack](https://github.com/AbdullahAIOps)** | Monitoring & alerting with dashboards as code | `Prometheus` · `Grafana` · `Loki` |
+| **[eks-gitops-platform](https://github.com/AbdullahAIOps/eks-gitops-platform)** | Production EKS provisioned with Terraform and delivered via **ArgoCD** app-of-apps GitOps — keyless **OIDC** CI/CD, IRSA, External Secrets, and supply-chain scanning baked in | `Terraform` · `EKS` · `ArgoCD` · `Helm` · `OIDC` |
+| **[multicloud-terraform-landing-zone](https://github.com/AbdullahAIOps/multicloud-terraform-landing-zone)** | Versioned Terraform modules spanning **AWS + Azure**, Terragrunt DRY multi-environment, with policy-as-code (**OPA/Conftest**) and cost gates on every PR | `Terraform` · `Terragrunt` · `AWS` · `Azure` · `OPA` |
+| **[observability-slo-platform](https://github.com/AbdullahAIOps/observability-slo-platform)** | Unified metrics, logs & traces (**Prometheus · Loki · Tempo · OpenTelemetry**) with multi-burn-rate **SLO** alerting and error budgets | `Prometheus` · `Grafana` · `Loki` · `Tempo` · `OTel` |
+| **[devsecops-supply-chain](https://github.com/AbdullahAIOps/devsecops-supply-chain)** | End-to-end secure supply chain: SAST/SCA, secret + IaC scanning, **SBOMs**, keyless **Cosign** signing, **SLSA** provenance, and **Kyverno** admission gates | `Cosign` · `Syft` · `Trivy` · `Kyverno` · `SLSA` |
+| **aks-internal-developer-platform** &nbsp;🚧 | _Coming soon_ — Azure **AKS** internal developer platform: Workload Identity, Key Vault CSI, Azure Pipelines + GitHub OIDC, and Backstage-style self-service | `AKS` · `Azure` · `Backstage` · `Workload Identity` |
 
 <br/>
 

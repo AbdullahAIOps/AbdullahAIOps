@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300" width="1000" height="300" role="img" aria-label="DevSecOps secure supply chain: SAST, SCA, secrets, SBOM, signing, admission">
+  <defs>
+    <linearGradient id="dbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#081410"/><stop offset="0.5" stop-color="#0A1A22"/><stop offset="1" stop-color="#0C2032"/>
+    </linearGradient>
+    <radialGradient id="dhalo" cx="0.5" cy="0.5" r="0.6">
+      <stop offset="0" stop-color="#16463A" stop-opacity="0.45"/><stop offset="1" stop-color="#16463A" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#123042"/><stop offset="1" stop-color="#0C2030"/>
+    </linearGradient>
+    <linearGradient id="shieldGold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2418"/><stop offset="1" stop-color="#1A1810"/>
+    </linearGradient>
+    <linearGradient id="dsheen" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#BFFFE8" stop-opacity="0.18"/><stop offset="1" stop-color="#BFFFE8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="dg" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+    <filter id="ddrop" x="-70%" y="-70%" width="240%" height="260%"><feDropShadow dx="0" dy="7" stdDeviation="7" flood-color="#000" flood-opacity="0.5"/></filter>
+    <style>.l{font-family:'JetBrains Mono',ui-monospace,monospace;}</style>
+  </defs>
+
+  <rect width="1000" height="300" fill="url(#dbg)"/>
+  <rect width="1000" height="300" fill="url(#dhalo)"/>
+
+  <!-- faint hex watermark -->
+  <g stroke="#5FD0A8" stroke-opacity="0.05" stroke-width="1" fill="none">
+    <path d="M500,70 l52,30 v60 l-52,30 l-52,-30 v-60 Z"/>
+    <path d="M500,40 l92,53 v106 l-92,53 l-92,-53 v-106 Z"/>
+  </g>
+
+  <text class="l" x="34" y="40" font-size="13" letter-spacing="3" fill="#5FD0A8">DEVSECOPS · SECURE SUPPLY CHAIN</text>
+  <circle cx="966" cy="35" r="4.5" fill="#5FD0A8" filter="url(#dg)"><animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/></circle>
+
+  <!-- track line through pedestals -->
+  <line x1="80" y1="214" x2="920" y2="214" stroke="#2C5A4A" stroke-width="2" stroke-dasharray="6 8">
+    <animate attributeName="stroke-dashoffset" values="28;0" dur="1.4s" repeatCount="indefinite"/>
+  </line>
+
+  <!-- ===== shield-gate macro positions: x = 130,290,450,610,770,? we use 6 across ===== -->
+  <!-- We render 6 gates. Gold = Sign. -->
+  <!-- gate template: shield centered (cx,148), pedestal ellipse (cx,214) -->
+
+  <!-- GATE 1: SAST -->
+  <g>
+    <ellipse cx="120" cy="214" rx="46" ry="13" fill="#0C2030" stroke="#5FD0A8" stroke-opacity="0.25"/>
+    <g transform="translate(120,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldFill)" stroke="#5FD0A8" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)"/>
+      <!-- magnifier + code -->
+      <g stroke="#5FD0A8" stroke-width="2" fill="none" stroke-linecap="round">
+        <circle cx="-2" cy="-4" r="8"/><line x1="4" y1="2" x2="10" y2="8"/>
+      </g>
+      <text class="l" x="0" y="-2" text-anchor="middle" font-size="7" fill="#5FD0A8" opacity="0">&lt;/&gt;</text>
+    </g>
+    <text class="l" x="120" y="246" text-anchor="middle" font-size="11" fill="#A8C4E0">SAST</text>
+    <text class="l" x="120" y="262" text-anchor="middle" font-size="8.5" fill="#5C7C94">static analysis</text>
+  </g>
+
+  <!-- GATE 2: SCA -->
+  <g>
+    <ellipse cx="280" cy="214" rx="46" ry="13" fill="#0C2030" stroke="#5FD0A8" stroke-opacity="0.25"/>
+    <g transform="translate(280,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldFill)" stroke="#5FD0A8" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)"/>
+      <!-- stacked deps cubes -->
+      <g fill="none" stroke="#5FD0A8" stroke-width="1.6">
+        <rect x="-11" y="-9" width="10" height="10" rx="1.5"/>
+        <rect x="2" y="-9" width="10" height="10" rx="1.5"/>
+        <rect x="-4.5" y="3" width="10" height="10" rx="1.5"/>
+      </g>
+    </g>
+    <text class="l" x="280" y="246" text-anchor="middle" font-size="11" fill="#A8C4E0">SCA · Trivy</text>
+    <text class="l" x="280" y="262" text-anchor="middle" font-size="8.5" fill="#5C7C94">dependencies</text>
+  </g>
+
+  <!-- GATE 3: Secrets -->
+  <g>
+    <ellipse cx="440" cy="214" rx="46" ry="13" fill="#0C2030" stroke="#5FD0A8" stroke-opacity="0.25"/>
+    <g transform="translate(440,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldFill)" stroke="#5FD0A8" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)"/>
+      <!-- key -->
+      <g stroke="#5FD0A8" stroke-width="2" fill="none" stroke-linecap="round">
+        <circle cx="-6" cy="-5" r="6"/><line x1="-1.5" y1="-0.5" x2="11" y2="12"/><line x1="6" y1="7" x2="11" y2="2"/><line x1="11" y1="12" x2="14" y2="9"/>
+      </g>
+    </g>
+    <text class="l" x="440" y="246" text-anchor="middle" font-size="11" fill="#A8C4E0">Secrets</text>
+    <text class="l" x="440" y="262" text-anchor="middle" font-size="8.5" fill="#5C7C94">gitleaks scan</text>
+  </g>
+
+  <!-- GATE 4: SBOM -->
+  <g>
+    <ellipse cx="600" cy="214" rx="46" ry="13" fill="#0C2030" stroke="#5FD0A8" stroke-opacity="0.25"/>
+    <g transform="translate(600,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldFill)" stroke="#5FD0A8" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)"/>
+      <!-- manifest doc -->
+      <g stroke="#5FD0A8" stroke-width="1.6" fill="none">
+        <rect x="-9" y="-12" width="18" height="24" rx="2"/>
+      </g>
+      <g stroke="#5FD0A8" stroke-width="1.4"><line x1="-5" y1="-6" x2="5" y2="-6"/><line x1="-5" y1="-1" x2="5" y2="-1"/><line x1="-5" y1="4" x2="2" y2="4"/></g>
+    </g>
+    <text class="l" x="600" y="246" text-anchor="middle" font-size="11" fill="#A8C4E0">SBOM · Syft</text>
+    <text class="l" x="600" y="262" text-anchor="middle" font-size="8.5" fill="#5C7C94">bill of materials</text>
+  </g>
+
+  <!-- GATE 5: Sign (GOLD) -->
+  <g>
+    <ellipse cx="760" cy="214" rx="46" ry="13" fill="#221C10" stroke="#C9A84C" stroke-opacity="0.3"/>
+    <g transform="translate(760,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldGold)" stroke="#C9A84C" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)" opacity="0.5"/>
+      <!-- wax seal / signature star + check -->
+      <circle cx="0" cy="-3" r="11" fill="none" stroke="#C9A84C" stroke-width="1.8"/>
+      <path d="M-5,-3 L-1.5,1 L6,-8" fill="none" stroke="#E7CE7E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <text class="l" x="760" y="246" text-anchor="middle" font-size="11" fill="#E7CE7E">Sign · Cosign</text>
+    <text class="l" x="760" y="262" text-anchor="middle" font-size="8.5" fill="#9A8244">keyless OIDC</text>
+  </g>
+
+  <!-- GATE 6: Admit -->
+  <g>
+    <ellipse cx="900" cy="214" rx="42" ry="12" fill="#0C2030" stroke="#5FD0A8" stroke-opacity="0.25"/>
+    <g transform="translate(900,150)" filter="url(#ddrop)">
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#shieldFill)" stroke="#5FD0A8" stroke-width="1.8"/>
+      <path d="M0,-34 L28,-23 V6 C28,24 15,35 0,43 C-15,35 -28,24 -28,6 V-23 Z" fill="url(#dsheen)"/>
+      <!-- padlock -->
+      <g stroke="#5FD0A8" stroke-width="1.8" fill="none"><path d="M-6,-3 V-9 a6,6 0 0,1 12,0 V-3"/></g>
+      <rect x="-9" y="-3" width="18" height="15" rx="2.5" fill="none" stroke="#5FD0A8" stroke-width="1.8"/>
+      <circle cx="0" cy="4" r="2" fill="#5FD0A8"/>
+    </g>
+    <text class="l" x="900" y="246" text-anchor="middle" font-size="11" fill="#A8C4E0">Admit · Kyverno</text>
+    <text class="l" x="900" y="262" text-anchor="middle" font-size="8.5" fill="#5C7C94">policy gate</text>
+  </g>
+
+  <!-- artifact token traveling the chain -->
+  <g>
+    <rect x="-7" y="-7" width="14" height="14" rx="2.5" fill="#E7CE7E" stroke="#FBEFC4" stroke-opacity="0.6" filter="url(#dg)">
+      <animateMotion path="M120 214 H900" dur="7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- scanning beam sweeping vertically -->
+  <rect x="60" y="92" width="880" height="2" fill="#5FD0A8" opacity="0.25" filter="url(#dg)">
+    <animate attributeName="y" values="100;196;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.05;0.35;0.05" dur="4s" repeatCount="indefinite"/>
+  </rect>
+
+  <rect x="2" y="2" width="996" height="296" rx="16" fill="none" stroke="#5FD0A8" stroke-opacity="0.16" stroke-width="2"/>
+</svg>
