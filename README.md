@@ -48,12 +48,12 @@ Every commit rides the same rails — and unsigned artifacts don't ride at all.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AbdullahAIOps&show_icons=true&rank_icon=github&bg_color=F2F5F8&title_color=B23F06&text_color=132437&icon_color=E4570F&border_color=132437&include_all_commits=true" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahAIOps&layout=compact&langs_count=8&bg_color=F2F5F8&title_color=B23F06&text_color=132437&border_color=132437" alt="Top languages" />
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=AbdullahAIOps&show_icons=true&rank_icon=github&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&icon_color=F0692B&border_color=3D5B7C&cache_seconds=86400" alt="GitHub stats" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahAIOps&layout=compact&langs_count=8&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&border_color=3D5B7C&cache_seconds=86400" alt="Top languages" />
 
 <br/><br/>
 
-<img src="https://streak-stats.demolab.com?user=AbdullahAIOps&background=F2F5F8&ring=E4570F&fire=E4570F&currStreakLabel=B23F06&sideLabels=132437&currStreakNum=132437&sideNums=132437&dates=6C86A0&border=132437" alt="Contribution streak" />
+<img src="https://streak-stats.demolab.com?user=AbdullahAIOps&background=0E1E30&ring=F0692B&fire=F0692B&currStreakLabel=F0692B&sideLabels=D9E8F6&currStreakNum=D9E8F6&sideNums=D9E8F6&dates=7FA3C4&border=3D5B7C" alt="Contribution streak" />
 
 </div>
 

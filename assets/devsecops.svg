@@ -1,64 +1,61 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 190" width="900" height="190" role="img" aria-label="Supply chain: image scanned, SBOM generated, signed with Cosign, verified by Kyverno gate; unsigned images are blocked.">
   <defs>
     <pattern id="sgrid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#132437" stroke-opacity=".06" stroke-width="1"/>
+      <path d="M26 0H0V26" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="900" height="190" fill="#F2F5F8"/>
+  <rect width="900" height="190" fill="#0E1E30"/>
   <rect width="900" height="190" fill="url(#sgrid)"/>
-  <rect x="1" y="1" width="898" height="188" fill="none" stroke="#132437" stroke-width="2"/>
+  <rect x="1" y="1" width="898" height="188" fill="none" stroke="#6E93B8" stroke-width="2"/>
 
-  <text x="24" y="30" font-family="Courier New, monospace" font-size="12" fill="#B23F06" letter-spacing="2">FIG. S — SECURE SUPPLY CHAIN</text>
-  <text x="876" y="30" text-anchor="end" font-family="Courier New, monospace" font-size="11" fill="#6C86A0">UNSIGNED = UNDEPLOYABLE</text>
+  <text x="24" y="30" font-family="Courier New, monospace" font-size="12" fill="#F0692B" letter-spacing="2">FIG. S — SECURE SUPPLY CHAIN</text>
+  <text x="876" y="30" text-anchor="end" font-family="Courier New, monospace" font-size="11" fill="#7FA3C4">UNSIGNED = UNDEPLOYABLE</text>
 
   <g font-family="Courier New, monospace">
-    <rect x="26" y="62" width="104" height="50" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="78" y="85" text-anchor="middle" font-size="11" fill="#132437">IMAGE</text>
-    <text x="78" y="100" text-anchor="middle" font-size="9" fill="#6C86A0">candidate</text>
+    <rect x="26" y="62" width="104" height="50" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="78" y="85" text-anchor="middle" font-size="11" fill="#D9E8F6">IMAGE</text>
+    <text x="78" y="100" text-anchor="middle" font-size="9" fill="#7FA3C4">candidate</text>
 
-    <rect x="162" y="62" width="104" height="50" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="214" y="85" text-anchor="middle" font-size="11" fill="#132437">TRIVY</text>
-    <text x="214" y="100" text-anchor="middle" font-size="9" fill="#16A06B">0 critical</text>
+    <rect x="162" y="62" width="104" height="50" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="214" y="85" text-anchor="middle" font-size="11" fill="#D9E8F6">TRIVY</text>
+    <text x="214" y="100" text-anchor="middle" font-size="9" fill="#33C08D">0 critical</text>
 
-    <rect x="298" y="62" width="104" height="50" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="350" y="85" text-anchor="middle" font-size="11" fill="#132437">SYFT</text>
-    <text x="350" y="100" text-anchor="middle" font-size="9" fill="#6C86A0">SBOM attached</text>
+    <rect x="298" y="62" width="104" height="50" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="350" y="85" text-anchor="middle" font-size="11" fill="#D9E8F6">SYFT</text>
+    <text x="350" y="100" text-anchor="middle" font-size="9" fill="#7FA3C4">SBOM attached</text>
 
-    <rect x="434" y="62" width="104" height="50" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="486" y="85" text-anchor="middle" font-size="11" fill="#132437">COSIGN</text>
-    <text x="486" y="100" text-anchor="middle" font-size="9" fill="#6C86A0">keyless · OIDC</text>
-    <circle cx="486" cy="56" r="4" fill="#E4570F">
+    <rect x="434" y="62" width="104" height="50" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="486" y="85" text-anchor="middle" font-size="11" fill="#D9E8F6">COSIGN</text>
+    <text x="486" y="100" text-anchor="middle" font-size="9" fill="#7FA3C4">keyless · OIDC</text>
+    <circle cx="486" cy="56" r="4" fill="#F0692B">
       <animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/>
     </circle>
 
-    <!-- gate -->
-    <path d="M570 58 h108 v34 l-54 26 -54 -26 Z" fill="#FFFFFF" stroke="#E4570F" stroke-width="2"/>
-    <text x="624" y="82" text-anchor="middle" font-size="11" fill="#B23F06">KYVERNO</text>
-    <text x="624" y="97" text-anchor="middle" font-size="9" fill="#6C86A0">verify sig + SLSA</text>
+    <path d="M570 58 h108 v34 l-54 26 -54 -26 Z" fill="#13273D" stroke="#F0692B" stroke-width="2"/>
+    <text x="624" y="82" text-anchor="middle" font-size="11" fill="#F0692B">KYVERNO</text>
+    <text x="624" y="97" text-anchor="middle" font-size="9" fill="#7FA3C4">verify sig + SLSA</text>
 
-    <rect x="726" y="62" width="146" height="50" rx="9" fill="#132437"/>
-    <text x="799" y="85" text-anchor="middle" font-size="11" fill="#F2F5F8">CLUSTER</text>
-    <text x="799" y="100" text-anchor="middle" font-size="9" fill="#8FA6BC">admitted · provenance ✓</text>
+    <rect x="726" y="62" width="146" height="50" rx="9" fill="#D9E8F6"/>
+    <text x="799" y="85" text-anchor="middle" font-size="11" fill="#0E1E30">CLUSTER</text>
+    <text x="799" y="100" text-anchor="middle" font-size="9" fill="#3D5B7C">admitted · provenance ✓</text>
   </g>
 
-  <!-- flow arrows -->
-  <g stroke="#132437" stroke-width="1.6" fill="none">
+  <g stroke="#D9E8F6" stroke-width="1.6" fill="none">
     <path d="M130 87 H158"/><path d="M153 82 L162 87 L153 92"/>
     <path d="M266 87 H294"/><path d="M289 82 L298 87 L289 92"/>
     <path d="M402 87 H430"/><path d="M425 82 L434 87 L425 92"/>
     <path d="M538 87 H566"/><path d="M561 82 L570 87 L561 92"/>
   </g>
-  <path d="M678 87 H722" stroke="#16A06B" stroke-width="1.8" stroke-dasharray="5 5" fill="none">
+  <path d="M678 87 H722" stroke="#33C08D" stroke-width="1.8" stroke-dasharray="5 5" fill="none">
     <animate attributeName="stroke-dashoffset" from="0" to="-20" dur="1.4s" repeatCount="indefinite"/>
   </path>
-  <path d="M717 82 L726 87 L717 92" stroke="#16A06B" stroke-width="1.8" fill="none"/>
+  <path d="M717 82 L726 87 L717 92" stroke="#33C08D" stroke-width="1.8" fill="none"/>
 
-  <!-- blocked branch -->
-  <path d="M624 120 V148" stroke="#B23F06" stroke-width="1.8" stroke-dasharray="4 4" fill="none">
+  <path d="M624 120 V148" stroke="#FF7A45" stroke-width="1.8" stroke-dasharray="4 4" fill="none">
     <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.4s" repeatCount="indefinite"/>
   </path>
-  <path d="M619 143 L624 152 L629 143" stroke="#B23F06" stroke-width="1.8" fill="none"/>
-  <text x="624" y="172" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#B23F06">✗ UNSIGNED — REJECTED AT ADMISSION</text>
+  <path d="M619 143 L624 152 L629 143" stroke="#FF7A45" stroke-width="1.8" fill="none"/>
+  <text x="624" y="172" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#FF7A45">✗ UNSIGNED — REJECTED AT ADMISSION</text>
 
-  <text x="26" y="172" font-family="Courier New, monospace" font-size="10" fill="#6C86A0">shift-left: every artifact scanned, attested, and verifiable back to its commit</text>
+  <text x="26" y="172" font-family="Courier New, monospace" font-size="10" fill="#7FA3C4">shift-left: every artifact scanned, attested, and verifiable back to its commit</text>
 </svg>

@@ -1,95 +1,73 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 230" width="900" height="230" role="img" aria-label="Abdullah Saleem — DevOps Engineer">
   <defs>
     <pattern id="grid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#132437" stroke-opacity=".07" stroke-width="1"/>
+      <path d="M26 0H0V26" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
     </pattern>
   </defs>
-
-  <!-- paper + grid -->
-  <rect width="900" height="230" fill="#F2F5F8"/>
+  <rect width="900" height="230" fill="#0E1E30"/>
   <rect width="900" height="230" fill="url(#grid)"/>
-  <rect x="1" y="1" width="898" height="228" fill="none" stroke="#132437" stroke-width="2"/>
-
-  <!-- registration marks -->
-  <g stroke="#132437" stroke-width="1.5">
+  <rect x="1" y="1" width="898" height="228" fill="none" stroke="#6E93B8" stroke-width="2"/>
+  <g stroke="#D9E8F6" stroke-width="1.5">
     <path d="M18 10v16M10 18h16"/>
     <path d="M882 10v16M874 18h16"/>
     <path d="M18 204v16M10 212h16"/>
     <path d="M882 204v16M874 212h16"/>
   </g>
-
-  <!-- left: identity -->
-  <text x="52" y="78" font-family="Arial Black, Arial, sans-serif" font-size="44" font-weight="900" fill="#132437" letter-spacing="1">ABDULLAH SALEEM</text>
-  <rect x="52" y="92" width="64" height="5" fill="#E4570F"/>
-  <text x="52" y="126" font-family="Courier New, monospace" font-size="16" fill="#3D5468">DevOps Engineer — production-grade cloud platforms</text>
-  <text x="52" y="150" font-family="Courier New, monospace" font-size="13" fill="#6C86A0">build it as code · ship it with GitOps · run it with SLOs</text>
-
-  <!-- bottom spec line -->
-  <line x1="52" y1="176" x2="560" y2="176" stroke="#132437" stroke-opacity=".25" stroke-width="1" stroke-dasharray="6 6">
+  <text x="52" y="78" font-family="Arial Black, Arial, sans-serif" font-size="44" font-weight="900" fill="#EAF2FA" letter-spacing="1">ABDULLAH SALEEM</text>
+  <rect x="52" y="92" width="64" height="5" fill="#F0692B"/>
+  <text x="52" y="126" font-family="Courier New, monospace" font-size="16" fill="#A9C4DC">DevOps Engineer — production-grade cloud platforms</text>
+  <text x="52" y="150" font-family="Courier New, monospace" font-size="13" fill="#7FA3C4">build it as code · ship it with GitOps · run it with SLOs</text>
+  <line x1="52" y1="176" x2="560" y2="176" stroke="#7FA3C4" stroke-opacity=".45" stroke-width="1" stroke-dasharray="6 6">
     <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2.2s" repeatCount="indefinite"/>
   </line>
-  <text x="52" y="200" font-family="Courier New, monospace" font-size="12" fill="#B23F06" letter-spacing="2">AWS · AZURE · KUBERNETES · TERRAFORM · ARGO CD · DEVSECOPS</text>
-  <text x="560" y="200" font-family="Courier New, monospace" font-size="11" fill="#6C86A0">REV 2026.07 — SHEET 01</text>
-
-  <!-- right: isometric cluster, floating -->
+  <text x="52" y="200" font-family="Courier New, monospace" font-size="12" fill="#F0692B" letter-spacing="2">AWS · AZURE · KUBERNETES · TERRAFORM · ARGO CD · DEVSECOPS</text>
+  <text x="560" y="200" font-family="Courier New, monospace" font-size="11" fill="#7FA3C4">REV 2026.07 — SHEET 01</text>
   <g transform="translate(730,112)">
     <animateTransform attributeName="transform" type="translate" values="730 112; 730 106; 730 112" dur="5.5s" repeatCount="indefinite" additive="replace"/>
-
-    <!-- ground grid diamond -->
-    <g stroke="#9FB2C4" stroke-width="1" fill="none" opacity=".65">
+    <g stroke="#46688C" stroke-width="1" fill="none" opacity=".8">
       <path d="M-110 60 L0 118 L110 60 L0 2 Z"/>
       <path d="M-73 41 L37 99 M-37 22 L73 80 M0 2 L110 60"/>
       <path d="M73 41 L-37 99 M37 22 L-73 80"/>
     </g>
-
-    <!-- connection lines (animated dash flow) -->
-    <g stroke="#132437" stroke-width="1.3" fill="none" stroke-dasharray="4 4" opacity=".55">
+    <g stroke="#D9E8F6" stroke-width="1.3" fill="none" stroke-dasharray="4 4" opacity=".55">
       <path d="M0 -78 L-62 -18"><animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.6s" repeatCount="indefinite"/></path>
       <path d="M0 -78 L62 -18"><animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.6s" repeatCount="indefinite"/></path>
       <path d="M0 -78 L0 -6"><animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.6s" repeatCount="indefinite"/></path>
       <path d="M-62 -18 L-62 44 M62 -18 L62 44 M0 -6 L0 56"><animate attributeName="stroke-dashoffset" from="0" to="-16" dur="2s" repeatCount="indefinite"/></path>
     </g>
-
-    <!-- top node (ingress, accent) -->
     <g transform="translate(0,-92)">
-      <path d="M0 -14 L16 -5 L16 13 L0 22 L-16 13 L-16 -5 Z" fill="#F2F5F8" stroke="#E4570F" stroke-width="2"/>
-      <path d="M-16 -5 L0 4 L16 -5 M0 4 L0 22" fill="none" stroke="#E4570F" stroke-width="1.4"/>
-      <circle cx="0" cy="-22" r="3" fill="#E4570F">
+      <path d="M0 -14 L16 -5 L16 13 L0 22 L-16 13 L-16 -5 Z" fill="#0E1E30" stroke="#F0692B" stroke-width="2"/>
+      <path d="M-16 -5 L0 4 L16 -5 M0 4 L0 22" fill="none" stroke="#F0692B" stroke-width="1.4"/>
+      <circle cx="0" cy="-22" r="3" fill="#F0692B">
         <animate attributeName="opacity" values="1;.2;1" dur="1.8s" repeatCount="indefinite"/>
       </circle>
     </g>
-
-    <!-- mid nodes (services) -->
     <g transform="translate(-62,-32)">
-      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#F2F5F8" stroke="#132437" stroke-width="1.7"/>
-      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#132437" stroke-width="1.1"/>
+      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#13273D" stroke="#D9E8F6" stroke-width="1.7"/>
+      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#D9E8F6" stroke-width="1.1"/>
     </g>
     <g transform="translate(62,-32)">
-      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#F2F5F8" stroke="#132437" stroke-width="1.7"/>
-      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#132437" stroke-width="1.1"/>
+      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#13273D" stroke="#D9E8F6" stroke-width="1.7"/>
+      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#D9E8F6" stroke-width="1.1"/>
     </g>
     <g transform="translate(0,-20)">
-      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#F2F5F8" stroke="#132437" stroke-width="1.7"/>
-      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#132437" stroke-width="1.1"/>
-      <circle cx="0" cy="3" r="2.5" fill="#E4570F">
+      <path d="M0 -12 L13 -4.5 L13 10 L0 17.5 L-13 10 L-13 -4.5 Z" fill="#13273D" stroke="#D9E8F6" stroke-width="1.7"/>
+      <path d="M-13 -4.5 L0 3 L13 -4.5 M0 3 L0 17.5" fill="none" stroke="#D9E8F6" stroke-width="1.1"/>
+      <circle cx="0" cy="3" r="2.5" fill="#F0692B">
         <animate attributeName="opacity" values=".2;1;.2" dur="2.4s" repeatCount="indefinite"/>
       </circle>
     </g>
-
-    <!-- data tier -->
     <g transform="translate(-62,30)">
-      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#132437" stroke="#132437" stroke-width="1.4"/>
+      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#D9E8F6" stroke="#D9E8F6" stroke-width="1.4"/>
     </g>
     <g transform="translate(62,30)">
-      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#132437" stroke="#132437" stroke-width="1.4"/>
+      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#D9E8F6" stroke="#D9E8F6" stroke-width="1.4"/>
     </g>
     <g transform="translate(0,42)">
-      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#F2F5F8" stroke="#E4570F" stroke-width="1.8"/>
+      <path d="M0 -10 L11 -3.5 L11 8 L0 14.5 L-11 8 L-11 -3.5 Z" fill="#0E1E30" stroke="#F0692B" stroke-width="1.8"/>
     </g>
-
-    <!-- caption -->
-    <text x="0" y="92" text-anchor="middle" font-family="Courier New, monospace" font-size="10" fill="#6C86A0">FIG. 01 — CLUSTER, RECONCILING</text>
-    <circle cx="-86" cy="88" r="3" fill="#16A06B">
+    <text x="0" y="92" text-anchor="middle" font-family="Courier New, monospace" font-size="10" fill="#7FA3C4">FIG. 01 — CLUSTER, RECONCILING</text>
+    <circle cx="-86" cy="88" r="3" fill="#33C08D">
       <animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/>
     </circle>
   </g>

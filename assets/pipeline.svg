@@ -1,52 +1,48 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 160" width="900" height="160" role="img" aria-label="Delivery pipeline: commit, build, test, scan and sign, deploy.">
   <defs>
     <pattern id="pgrid" width="26" height="26" patternUnits="userSpaceOnUse">
-      <path d="M26 0H0V26" fill="none" stroke="#132437" stroke-opacity=".06" stroke-width="1"/>
+      <path d="M26 0H0V26" fill="none" stroke="#FFFFFF" stroke-opacity=".05" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="900" height="160" fill="#F2F5F8"/>
+  <rect width="900" height="160" fill="#0E1E30"/>
   <rect width="900" height="160" fill="url(#pgrid)"/>
-  <rect x="1" y="1" width="898" height="158" fill="none" stroke="#132437" stroke-width="2"/>
+  <rect x="1" y="1" width="898" height="158" fill="none" stroke="#6E93B8" stroke-width="2"/>
 
-  <text x="24" y="30" font-family="Courier New, monospace" font-size="12" fill="#B23F06" letter-spacing="2">FIG. P — DELIVERY PIPELINE</text>
-  <text x="876" y="30" text-anchor="end" font-family="Courier New, monospace" font-size="11" fill="#6C86A0">EVERY COMMIT · NO EXCEPTIONS</text>
+  <text x="24" y="30" font-family="Courier New, monospace" font-size="12" fill="#F0692B" letter-spacing="2">FIG. P — DELIVERY PIPELINE</text>
+  <text x="876" y="30" text-anchor="end" font-family="Courier New, monospace" font-size="11" fill="#7FA3C4">EVERY COMMIT · NO EXCEPTIONS</text>
 
-  <!-- rail -->
-  <line x1="90" y1="84" x2="810" y2="84" stroke="#132437" stroke-opacity=".25" stroke-width="1.3" stroke-dasharray="6 6">
+  <line x1="90" y1="84" x2="810" y2="84" stroke="#7FA3C4" stroke-opacity=".5" stroke-width="1.3" stroke-dasharray="6 6">
     <animate attributeName="stroke-dashoffset" from="0" to="-24" dur="2s" repeatCount="indefinite"/>
   </line>
 
-  <!-- stages -->
   <g font-family="Courier New, monospace">
-    <rect x="30" y="58" width="120" height="52" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="90" y="82" text-anchor="middle" font-size="12" fill="#132437">COMMIT</text>
-    <text x="90" y="98" text-anchor="middle" font-size="9" fill="#6C86A0">main · signed-off</text>
+    <rect x="30" y="58" width="120" height="52" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="90" y="82" text-anchor="middle" font-size="12" fill="#D9E8F6">COMMIT</text>
+    <text x="90" y="98" text-anchor="middle" font-size="9" fill="#7FA3C4">main · signed-off</text>
 
-    <rect x="190" y="58" width="120" height="52" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="250" y="82" text-anchor="middle" font-size="12" fill="#132437">BUILD</text>
-    <text x="250" y="98" text-anchor="middle" font-size="9" fill="#6C86A0">multi-stage · pinned</text>
+    <rect x="190" y="58" width="120" height="52" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="250" y="82" text-anchor="middle" font-size="12" fill="#D9E8F6">BUILD</text>
+    <text x="250" y="98" text-anchor="middle" font-size="9" fill="#7FA3C4">multi-stage · pinned</text>
 
-    <rect x="350" y="58" width="120" height="52" rx="9" fill="#FFFFFF" stroke="#132437" stroke-width="1.6"/>
-    <text x="410" y="82" text-anchor="middle" font-size="12" fill="#132437">TEST</text>
-    <text x="410" y="98" text-anchor="middle" font-size="9" fill="#6C86A0">coverage gate</text>
+    <rect x="350" y="58" width="120" height="52" rx="9" fill="#13273D" stroke="#D9E8F6" stroke-width="1.6"/>
+    <text x="410" y="82" text-anchor="middle" font-size="12" fill="#D9E8F6">TEST</text>
+    <text x="410" y="98" text-anchor="middle" font-size="9" fill="#7FA3C4">coverage gate</text>
 
-    <rect x="510" y="58" width="120" height="52" rx="9" fill="#FFFFFF" stroke="#E4570F" stroke-width="1.8"/>
-    <text x="570" y="82" text-anchor="middle" font-size="12" fill="#B23F06">SCAN + SIGN</text>
-    <text x="570" y="98" text-anchor="middle" font-size="9" fill="#6C86A0">trivy · cosign · sbom</text>
+    <rect x="510" y="58" width="120" height="52" rx="9" fill="#13273D" stroke="#F0692B" stroke-width="1.8"/>
+    <text x="570" y="82" text-anchor="middle" font-size="12" fill="#F0692B">SCAN + SIGN</text>
+    <text x="570" y="98" text-anchor="middle" font-size="9" fill="#7FA3C4">trivy · cosign · sbom</text>
 
-    <rect x="670" y="58" width="140" height="52" rx="9" fill="#132437"/>
-    <text x="740" y="82" text-anchor="middle" font-size="12" fill="#F2F5F8">DEPLOY</text>
-    <text x="740" y="98" text-anchor="middle" font-size="9" fill="#8FA6BC">argo cd · zero-downtime</text>
+    <rect x="670" y="58" width="140" height="52" rx="9" fill="#D9E8F6"/>
+    <text x="740" y="82" text-anchor="middle" font-size="12" fill="#0E1E30">DEPLOY</text>
+    <text x="740" y="98" text-anchor="middle" font-size="9" fill="#3D5B7C">argo cd · zero-downtime</text>
   </g>
 
-  <!-- traveling artifact -->
-  <rect x="-5" y="-5" width="10" height="10" rx="2" fill="#E4570F">
+  <rect x="-5" y="-5" width="10" height="10" rx="2" fill="#F0692B">
     <animateMotion path="M90 44 H740" dur="4.5s" repeatCount="indefinite"/>
   </rect>
-  <line x1="90" y1="44" x2="740" y2="44" stroke="#132437" stroke-opacity=".12" stroke-width="1"/>
+  <line x1="90" y1="44" x2="740" y2="44" stroke="#D9E8F6" stroke-opacity=".15" stroke-width="1"/>
 
-  <!-- staggered checks -->
-  <g font-family="Courier New, monospace" font-size="11" fill="#16A06B">
+  <g font-family="Courier New, monospace" font-size="11" fill="#33C08D">
     <text x="90" y="132" text-anchor="middle" opacity="0">✓ 12s<animate attributeName="opacity" from="0" to="1" dur=".4s" begin="0.4s" fill="freeze"/></text>
     <text x="250" y="132" text-anchor="middle" opacity="0">✓ 1m04<animate attributeName="opacity" from="0" to="1" dur=".4s" begin="1.1s" fill="freeze"/></text>
     <text x="410" y="132" text-anchor="middle" opacity="0">✓ 2m18<animate attributeName="opacity" from="0" to="1" dur=".4s" begin="1.8s" fill="freeze"/></text>
