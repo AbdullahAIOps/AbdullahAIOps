@@ -1,18 +1,22 @@
 <div align="center">
 
-<img src="assets/header.svg" width="100%" alt="Abdullah Saleem — DevOps Engineer. Build it as code, ship it with GitOps, run it with SLOs." />
+<img src="assets/header.svg" width="100%" alt="Abdullah Saleem — DevOps Engineer. Production-grade cloud platforms." />
 
 <br/><br/>
 
 **I build and secure production-grade cloud platforms end to end** — multi-cloud infrastructure as code on AWS & Azure, GitOps-driven Kubernetes delivery, shift-left supply-chain security, and observability with real SLOs.
 
-`If it isn't in Git, it doesn't exist.`
-
-<br/>
+<img src="assets/tagline.svg" width="100%" alt="Build it as code · Ship it with GitOps · Run it with SLOs" />
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
 </div>
+
+## 🗺️ How I build
+
+Every platform follows the same drawing: Git as the source of truth, Terraform provisioning it, Argo CD keeping it honest, and observability watching the whole thing.
+
+<img src="assets/architecture.svg" width="100%" alt="Reference architecture: users → ingress → EKS cluster → data; Terraform provisions, Argo CD syncs, Prometheus watches." />
 
 ## 📐 Flagship platforms
 
@@ -27,6 +31,18 @@ Every repo below is documented like a handover — architecture, decisions, trad
 | 05 | **aks-internal-developer-platform** — *on the board* 🚧 | Azure-side golden path: AKS, Workload Identity, self-service templates | `AKS` `Azure` `Backstage` |
 
 <div align="center"><img src="assets/divider.svg" width="100%" alt="" /></div>
+
+## 🚀 How I ship
+
+Every commit rides the same rails — and unsigned artifacts don't ride at all.
+
+<img src="assets/pipeline.svg" width="100%" alt="Pipeline: commit → build → test → scan+sign → deploy, all gates green." />
+
+<img src="assets/devsecops.svg" width="100%" alt="Supply chain: image → Trivy → SBOM → Cosign → Kyverno gate → cluster; unsigned images rejected at admission." />
+
+## 🤖 The AIOps part of the name
+
+<img src="assets/aiops.svg" width="100%" alt="Anomaly detected at 02:14, auto-remediation runbook executed, resolved 02:16, error budget intact." />
 
 ## 📊 Performance
 
@@ -70,16 +86,12 @@ Every repo below is documented like a handover — architecture, decisions, trad
 
 <div align="center">
 
-<img src="assets/divider.svg" width="100%" alt="" />
-
-<br/>
-
 [![Portfolio](https://img.shields.io/badge/Portfolio-abdullahaiops.github.io-E4570F?style=for-the-badge)](https://abdullahaiops.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-abdullha--saleem-132437?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/abdullha-saleem)
 [![Email](https://img.shields.io/badge/Email-abdullhasaleem123%40gmail.com-132437?style=for-the-badge&logo=gmail&logoColor=F2F5F8)](mailto:abdullhasaleem123@gmail.com)
 
 <br/>
 
-`● All systems operational — available for new work`
+<img src="assets/footer.svg" width="100%" alt="All systems operational — available for new work." />
 
 </div>

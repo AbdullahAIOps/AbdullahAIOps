@@ -1,55 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 180" width="1000" height="180" role="img" aria-label="Let's build something reliable together">
-  <defs>
-    <linearGradient id="fbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#080F1C"/><stop offset="0.5" stop-color="#0C1A30"/><stop offset="1" stop-color="#102640"/>
-    </linearGradient>
-    <radialGradient id="fhalo" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stop-color="#27466F" stop-opacity="0.45"/><stop offset="1" stop-color="#27466F" stop-opacity="0"/></radialGradient>
-    <radialGradient id="fcore" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stop-color="#FFF8E6"/><stop offset="0.45" stop-color="#E7CE7E"/><stop offset="1" stop-color="#C9A84C"/></radialGradient>
-    <linearGradient id="fsheen" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#BFE0FF" stop-opacity="0"/><stop offset="0.5" stop-color="#BFE0FF" stop-opacity="0.7"/><stop offset="1" stop-color="#BFE0FF" stop-opacity="0"/></linearGradient>
-    <filter id="fg" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <filter id="fbigg" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-    <style>.s{font-family:Georgia,'Times New Roman',serif;} .m{font-family:'JetBrains Mono',ui-monospace,monospace;}</style>
-  </defs>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 120" width="900" height="120" role="img" aria-label="All systems operational — available for new work.">
+  <rect width="900" height="120" fill="#F2F5F8"/>
+  <line x1="0" y1="2" x2="900" y2="2" stroke="#132437" stroke-width="4"/>
 
-  <rect width="1000" height="180" fill="url(#fbg)"/>
-  <rect width="1000" height="180" fill="url(#fhalo)"/>
-
-  <!-- constellation -->
-  <g fill="#A8C4E0">
-    <line x1="120" y1="40" x2="210" y2="58" stroke="#3D6494" stroke-opacity="0.3" stroke-width="1"/>
-    <line x1="790" y1="58" x2="880" y2="40" stroke="#3D6494" stroke-opacity="0.3" stroke-width="1"/>
-    <circle cx="120" cy="40" r="2.4"><animate attributeName="opacity" values="0.2;1;0.2" dur="2.6s" repeatCount="indefinite"/></circle>
-    <circle cx="210" cy="58" r="2"><animate attributeName="opacity" values="1;0.3;1" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="880" cy="40" r="2.4"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.8s" repeatCount="indefinite"/></circle>
-    <circle cx="790" cy="58" r="2"><animate attributeName="opacity" values="1;0.25;1" dur="3.2s" repeatCount="indefinite"/></circle>
+  <g stroke="#132437" stroke-width="1.5">
+    <path d="M18 94v16M10 102h16"/>
+    <path d="M882 94v16M874 102h16"/>
   </g>
 
-  <!-- left orbiting node -->
-  <g transform="translate(150,98)">
-    <ellipse rx="34" ry="12" fill="none" stroke="#5BC8E0" stroke-opacity="0.3" stroke-width="1.1">
-      <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="16s" repeatCount="indefinite"/>
-    </ellipse>
-    <circle r="7" fill="url(#fcore)" filter="url(#fbigg)"><animate attributeName="r" values="6;8;6" dur="2.8s" repeatCount="indefinite"/></circle>
-  </g>
-  <!-- right orbiting node -->
-  <g transform="translate(850,98)">
-    <ellipse rx="34" ry="12" fill="none" stroke="#5FD0A8" stroke-opacity="0.3" stroke-width="1.1">
-      <animateTransform attributeName="transform" type="rotate" from="60" to="420" dur="18s" repeatCount="indefinite"/>
-    </ellipse>
-    <circle r="7" fill="url(#fcore)" filter="url(#fbigg)"><animate attributeName="r" values="6;8;6" dur="3.1s" repeatCount="indefinite"/></circle>
-  </g>
+  <circle cx="236" cy="47" r="5" fill="#16A06B">
+    <animate attributeName="opacity" values="1;.25;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="236" cy="47" r="10" fill="none" stroke="#16A06B" stroke-width="1">
+    <animate attributeName="r" values="7;13" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values=".7;0" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <text x="258" y="52" font-family="Courier New, monospace" font-size="14" font-weight="bold" fill="#132437" letter-spacing="1">ALL SYSTEMS OPERATIONAL — AVAILABLE FOR NEW WORK</text>
 
-  <text class="s" text-anchor="middle" x="500" y="92" font-size="30" font-weight="700" fill="#EAF2FB">Let&#8217;s build something reliable together.</text>
+  <text x="450" y="80" text-anchor="middle" font-family="Courier New, monospace" font-size="11" fill="#3D5468">abdullhasaleem123@gmail.com · linkedin.com/in/abdullha-saleem · abdullahaiops.github.io</text>
 
-  <rect x="430" y="106" height="3" rx="1.5" fill="#C9A84C">
-    <animate attributeName="width" values="0;140;0" dur="4s" repeatCount="indefinite"/>
-    <animate attributeName="x" values="500;430;500" dur="4s" repeatCount="indefinite"/>
-  </rect>
-
-  <text class="m" text-anchor="middle" x="500" y="136" font-size="12" letter-spacing="1.4" fill="#A8C4E0" fill-opacity="0.85">DevOps · AIOps · Cloud · Kubernetes · Terraform · DevSecOps</text>
-
-  <rect x="-300" y="0" width="300" height="180" fill="url(#fsheen)" opacity="0.04">
-    <animateTransform attributeName="transform" type="translate" from="-300 0" to="1300 0" dur="8s" repeatCount="indefinite"/>
-  </rect>
-  <rect x="2" y="2" width="996" height="176" rx="16" fill="none" stroke="#C9A84C" stroke-opacity="0.2" stroke-width="2"/>
+  <text x="18" y="112" font-family="Courier New, monospace" font-size="9" fill="#6C86A0" letter-spacing="1">DRAWN — A. SALEEM</text>
+  <text x="882" y="112" text-anchor="end" font-family="Courier New, monospace" font-size="9" fill="#6C86A0" letter-spacing="1">SHEET END — REV 2026.07</text>
 </svg>
