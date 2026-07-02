@@ -48,8 +48,8 @@ Every commit rides the same rails — and unsigned artifacts don't ride at all.
 
 <div align="center">
 
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=AbdullahAIOps&show_icons=true&rank_icon=github&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&icon_color=F0692B&border_color=3D5B7C&cache_seconds=86400" alt="GitHub stats" />
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=AbdullahAIOps&layout=compact&langs_count=8&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&border_color=3D5B7C&cache_seconds=86400" alt="Top languages" />
+<img height="165" src="[https://github-readme-stats.vercel.app/api?](https://github-readme-stats-alpha-seven-90.vercel.app/api?)username=AbdullahAIOps&show_icons=true&rank_icon=github&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&icon_color=F0692B&border_color=3D5B7C&cache_seconds=86400" alt="GitHub stats" />
+<img height="165" src="[https://github-readme-stats.vercel.app](https://github-readme-stats-alpha-seven-90.vercel.app/)/api/top-langs/?username=AbdullahAIOps&layout=compact&langs_count=8&bg_color=0E1E30&title_color=F0692B&text_color=D9E8F6&border_color=3D5B7C&cache_seconds=86400" alt="Top languages" />
 
 <br/><br/>
 
